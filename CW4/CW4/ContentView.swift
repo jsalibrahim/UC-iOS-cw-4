@@ -23,7 +23,6 @@ struct ContentView: View {
                 }
             }
             
-            
             TextField("Enter the item name", text: $name)
                 .frame(width: 200, height: 45)
                 .multilineTextAlignment(.center)
@@ -52,6 +51,7 @@ struct ContentView: View {
                 
                 Button(action:{
                     items.remove(at:0)
+                    
                 }) {
                     Text("remove")
                 }
